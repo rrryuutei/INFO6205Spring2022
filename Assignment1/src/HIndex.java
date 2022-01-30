@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class HIndex {
     class Solution {
         public int hIndex(int[] city) {

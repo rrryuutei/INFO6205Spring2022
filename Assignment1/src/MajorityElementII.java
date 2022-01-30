@@ -1,4 +1,9 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class MajorityElementII {
+
      public List<Integer> majorityElement(int[] nums) {
             Arrays.sort(nums);
             List<Integer>res=new ArrayList<>();
