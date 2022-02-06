@@ -6,7 +6,6 @@ public class ReorganizeString {
         class pii {
             char x;
             int cnt;
-            //x为字母 cnt为字母出现次数
             pii(char x,int cnt)
             {
                 this.x=x;
@@ -16,7 +15,6 @@ public class ReorganizeString {
         public String reorganizeString(String s) {
             PriorityQueue<pii> q=new PriorityQueue<>(new Comparator<pii>() {
                 @Override
-//大根堆 按照数量排序
                 public int compare(pii o1, pii o2) {
                     return o2.cnt-o1.cnt;
                 }
@@ -28,7 +26,7 @@ public class ReorganizeString {
                 cnt[s.charAt(i)-'a']++;
                 maxv=Math.max(cnt[s.charAt(i)-'a'],maxv);
             }
-            if(maxv>s.length()-maxv+1)//特判无解情况
+            if(maxv>s.length()-maxv+1)
             {
                 return "";
             }
