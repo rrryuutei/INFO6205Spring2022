@@ -26,10 +26,6 @@ public class addTwoNumbers {
             }
             return dummy.next; // 注意此处返回的是dummy.next
         }
-        public static void main(String args[])
-        {
-
-        }
 
     }
 

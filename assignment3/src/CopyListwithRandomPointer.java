@@ -1,29 +1,28 @@
-import org.w3c.dom.Node;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-class node {
+class Node {
     int val;
-    node next;
-    node random;
+   Node next;
+   Node random;
 
-    public node(int val) {
+    public Node(int val) {
         this.val = val;
         this.next = null;
         this.random = null;
     }
 }
-
 class Solution {
-    Map<node, node> cachedNode = new HashMap<node, node>();
 
-    public node copyRandomList(node head) {
+    Map<Node, Node> cachedNode = new HashMap<Node, Node>();
+
+    public Node copyRandomList(Node head) {
         if (head == null) {
             return null;
         }
         if (!cachedNode.containsKey(head)) {
-            node headNew = new node(head.val);
+            Node headNew = new Node(head.val);
             cachedNode.put(head, headNew);
             headNew.next = copyRandomList(head.next);
             headNew.random = copyRandomList(head.random);
