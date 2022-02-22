@@ -3,7 +3,7 @@ public class mergeInBetween {
         ListNode next;
         int val;
     }
-    class solution {
+    class Solution {
         public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {        ListNode leftSide = list1;
             ListNode rightSide = list1;
             int leftCount = 1;
