@@ -2,7 +2,8 @@ import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
 
 public class verticalTraversal {
-    public List<List<Integer>> verticalTraversal(TreeNode root) {
+    class Solution {
+     public List<List<Integer>> verticalTraversal(TreeNode root) {
         ArrayList<int[]> ans = new ArrayList<>();
         List<List<Integer>> ansFinal = new ArrayList<>();
         traverse(root, ans, 0, 0);
@@ -55,4 +56,5 @@ public class verticalTraversal {
             }
         }
     }
+}
 }
