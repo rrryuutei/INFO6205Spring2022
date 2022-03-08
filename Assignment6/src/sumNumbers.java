@@ -1,6 +1,7 @@
 import javax.swing.tree.TreeNode;
 
 public class sumNumbers {
+    class Solution {
     public int sumNumbers(TreeNode root) {
         int[] sum = new int[1];
         buildNumbers(root, sum, 0);
@@ -17,8 +18,6 @@ public class sumNumbers {
             buildNumbers(root.right, num, (currSum + root.val) * 10);
         }
     }
+
 }
-
-
-
 }
