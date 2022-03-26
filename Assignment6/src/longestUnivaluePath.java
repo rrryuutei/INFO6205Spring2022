@@ -1,4 +1,5 @@
 public class longestUnivaluePath {
+    class Solution {
     public int longestUnivaluePath(TreeNode root) {
         if (root == null) return 0;
         int val = root.val;

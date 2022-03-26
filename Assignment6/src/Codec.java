@@ -1,8 +1,26 @@
 import javax.swing.tree.TreeNode;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class Codec {
+    public  void traverse(TreeNode root, ArrayList<int[]> ans, int x, int y) {
+        if (root != null) {
+            int[] data = new int[3];
+            data[0] = x;
+            data[1] = y;
+            data[2] = root.val;
+            ans.add(data);
+            if (root.left != null) {
+                traverse(root.left, ans, x - 1, y - 1);
+            }
+            if (root.right != null) {
+                traverse(root.right, ans, x + 1, y - 1);
+            }
+        }
+    }
+}
+
 
     public String serialize(TreeNode root) {
         // 如果传入的树为空数，就返回一个n@ ，其中n代表这个节点是空节点，@是分隔符，可以替换成别的，如#和,
