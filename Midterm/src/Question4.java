@@ -4,15 +4,15 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Question4{
-class Solution {
+class solution {
     public int[][] merge(int[][] arr) {
         if(arr == null || arr.length<=1)
             return arr;
         List<int[]> list = new ArrayList<>();
         Arrays.sort(arr,new Comparator<int[]>(){
             @Override
-            public int compare(int[] a,int[] b){
-                return a[0]-b[0];
+            public int compare(int[] nums1,int[] nums2){
+                return nums1[0]-nums2[0];
             }
         });
         int i=0;
@@ -31,4 +31,6 @@ class Solution {
     }
 }
 }
+
+
 

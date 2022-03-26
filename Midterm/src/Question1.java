@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Question1 {
     class solution{
-        public List <String> findMissinfgRanges(int[]nums,int lower,int upper){
+        public List <String> findRanges(int[]nums,int lower,int upper){
 
-    List <String> res =new ArrayList<>();
+    List<String> res =new ArrayList<>();
     long Lower1= (long) lower;
     long upper1 = (long) upper;
 
@@ -24,7 +24,7 @@ public class Question1 {
     lower1 = (long) num+1 ;
  }
     if (lower1 == upper1){
-     res.add(String.valueOf(lower1));
+     res.add(String.ValueOf(lower1));
 
 } else if{
          (lower1<uppper1)
