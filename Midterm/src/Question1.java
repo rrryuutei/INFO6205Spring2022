@@ -10,14 +10,13 @@ public class Question1 {
 
     for(int num:nums){
     if (num == lower1){
-        lower1
+        lower1++；
 
     } else if (lower1 < num) {
         if (lower1+1 == num){
             res.add(String.valueOf(lower1));
         }
     }
-
     }
     else{
         res.add(lower1+"->"+(num-1));

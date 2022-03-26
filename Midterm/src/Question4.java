@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class Question4
+public class Question4{
 class Solution {
     public int[][] merge(int[][] arr) {
         if(arr == null || arr.length<=1)
@@ -31,3 +31,4 @@ class Solution {
     }
 }
 }
+
